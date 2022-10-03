@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_8sdp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAssign"
+            style="@style/btnBigStyle"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:background="@drawable/ic_btn_login"
+            android:text="@string/assign" />
+
+        <TextView
+            android:id="@+id/txtAssignLater"
+            style="@style/fontBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnAssign"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/_12sdp"
+            android:text="@string/assignLater"
+            android:textSize="@dimen/_11sdp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

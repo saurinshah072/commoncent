@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_dashboard"
+    app:startDestination="@id/quickscanFragment">
+
+    <fragment
+        android:id="@+id/myaccountFragment"
+        android:name="com.commoncents.ui.dashboard.account.fragment.MyaccountFragment"
+        android:label="@string/myaccount"
+        tools:layout="@layout/fragment_myaccount" />
+    <fragment
+        android:id="@+id/quickscanFragment"
+        android:name="com.commoncents.ui.dashboard.quickscan.fragment.QuickscanFragment"
+        android:label="Unloading"
+        tools:layout="@layout/fragment_quickscan">
+        <action
+            android:id="@+id/action_qrcode"
+            app:destination="@id/qrcodeScanFragment" />
+    </fragment>
+
+    <dialog
+        android:windowSoftInputMode="stateUnspecified|adjustPan"
+        android:id="@+id/bottomSheetPrintPackID"
+        android:name="com.commoncents.view.dialog.PrintPackIDDialogFragment"
+        tools:layout="@layout/custom_popup_printpackid_layout" />
+
+    <fragment
+        android:id="@+id/qrcodeScanFragment"
+        android:name="com.commoncents.ui.dashboard.quickscan.fragment.QrcodeScanFragment"
+        android:label="@string/scanqrcode"></fragment>
+
+
+    <fragment
+        android:id="@+id/viewPDFFragment"
+        android:name="com.commoncents.ui.dashboard.packidoperation.fragment.ViewPDFFragment"
+        android:label="@string/viewpdf"></fragment>
+
+
+
+
+    <fragment
+        android:id="@+id/assignLocationFragment"
+        android:name="com.commoncents.ui.dashboard.assignpackid.fragment.AssignPackFragment"
+        android:label="Assign Pack ID Location">
+    </fragment>
+
+    <fragment
+        android:id="@+id/assignPalletFragment"
+        android:name="com.commoncents.ui.dashboard.assignbrokenpallet.fragment.BrokenPalletFragment"
+        android:label="Report Damage Pallet"></fragment>
+
+    <fragment
+        android:id="@+id/retrievingFragment"
+        android:name="com.commoncents.ui.retrieving.quickScanFragment.RetrievingFragment"
+        android:label="@string/retrieving"
+        tools:layout="@layout/fragment_retrieving">
+        <action
+            android:id="@+id/action_qrcode"
+            app:destination="@id/qrcodeScanFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/packIdImageFragment"
+        android:name="com.commoncents.ui.dashboard.packidoperation.fragment.PackIDImageFragment"
+        android:label="@string/pack_id_images"></fragment>
+
+    <fragment
+        android:id="@+id/fullImageFragment"
+        android:name="com.commoncents.ui.dashboard.packidoperation.fragment.FullImageFragment"
+        android:label="@string/pack_id_images"></fragment>
+    <fragment
+        android:id="@+id/packIDOperationFragment"
+        android:name="com.commoncents.ui.dashboard.packidoperation.fragment.PackIDOperationFragment"
+        android:label="Print Pack IDs">
+        <action
+            android:id="@+id/action_qrcode"
+            app:destination="@id/qrcodeScanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/retrievingFormFragment"
+        android:name="com.commoncents.ui.retrieving.formFragment.RetrievingFormFragment"
+        android:label="Scan In"
+        tools:layout="@layout/fragment_retrieving">
+        <action
+            android:id="@+id/action_qrcode"
+            app:destination="@id/qrcodeScanFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pacIDNotAssignedFragment"
+        android:name="com.commoncents.ui.retrieving.quickScanFragment.PacIDNotAssignedFragment"
+        android:label="@string/pack_id_not_assign">
+        tools:layout="@layout/fragment_quickscan">
+        <action
+            android:id="@+id/action_qrcode"
+            app:destination="@id/qrcodeScanFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/breakDownFragment"
+        android:name="com.commoncents.ui.breakdown.fragment.BreakDownFragment"
+        android:label="@string/break_down"
+        tools:layout="@layout/fragment_breakdown">
+        <action
+            android:id="@+id/breakDown_scan"
+            app:destination="@id/qrcodeScanFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/assignPackagingFragment"
+        android:name="com.commoncents.ui.dashboard.packaging.fragment.AssignPackagingFragment"
+        android:label="@string/assign_packaging"
+        tools:layout="@layout/fragment_assign_packaging">
+    </fragment>
+
+</navigation>

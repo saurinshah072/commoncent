@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9ab7b342-c62a-47c6-a621-4f89e67ca345" name="Changes" comment="- Unit test of the application and issue fixes">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/breakdown/fragment/BreakDownFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/breakdown/model/BreakDownModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/breakdown/viewModel/BreakDownVM.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/PackIdAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packaging/fragment/AssignPackagingFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packaging/model/AssignPackagingModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packaging/model/SingleImageUploadModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packaging/viewmodel/AssignPackagingVM.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packaging/viewmodel/ImageUploadVM.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packidoperation/model/DeleteImagReponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packidoperation/model/DeletePackIdResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packidoperation/viewModel/DeleteImageVM.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packidoperation/viewModel/DeletePackIDVM.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/utils/PrimaryTimerHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/utils/SecondaryTimerHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/utils/TrackingUtility.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/utils/UploadImageBG.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_assign_packaging.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_breakdown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_location_packids.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/data/api/ApiHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/data/api/ApiHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/data/api/ApiHelperImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/data/api/ApiHelperImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/data/api/ApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/data/api/ApiService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/data/repository/AssignLocationRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/data/repository/AssignLocationRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/auth/activity/SplashActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/auth/activity/SplashActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/DashboardActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/DashboardActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/adapter/BrokenPalletImageAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/adapter/BrokenPalletImageAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/model/BrokenImageResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/model/BrokenImageResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packidoperation/adapter/PackIDAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packidoperation/adapter/PackIDAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packidoperation/adapter/PackIDImageAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packidoperation/adapter/PackIDImageAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packidoperation/fragment/PackIDImageFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packidoperation/fragment/PackIDImageFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packidoperation/fragment/PackIDOperationFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packidoperation/fragment/PackIDOperationFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/quickscan/fragment/QuickscanFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/quickscan/fragment/QuickscanFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/retrieving/formFragment/RetrievingFormFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/retrieving/formFragment/RetrievingFormFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/retrieving/quickScanFragment/RetrievingFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/retrieving/quickScanFragment/RetrievingFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/utils/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/utils/Constants.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/utils/Utility.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/utils/Utility.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/commoncents/view/dialog/PrintPackIDDialogFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/commoncents/view/dialog/PrintPackIDDialogFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_popup_printpackid_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_popup_printpackid_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_packid_images.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_packid_images.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_packidoperation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_packidoperation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_packlocation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_packlocation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_retrieving.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_retrieving.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_retrieving_form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_retrieving_form.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_packid_container.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_packid_container.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_packid_images.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_packid_images.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_pdf_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_pdf_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/drawer_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/drawer_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/dashboard_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/dashboard_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/saurinshah/.android/avd/Pixel_XL.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Common Cents" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="resourceFile" />
+        <option value="Kotlin Script" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/Desktop/commoncents" />
+    <option name="KEY_ALIAS" value="commoncents" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BpoIAq3bmZByO6z1vuItqbvuIB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="Common_Cents.app" />
+    <property name="BundleExportedModule" value="Common_Cents.app" />
+    <property name="DEBUGGABLE_DEVICE" value="xiaomi-m2006c3mii-192.168.4.211:5555" />
+    <property name="DEBUGGABLE_PROCESS" value="com.commoncents" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
+    <property name="ExportApk.BuildVariants" value="debug" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="ScreenshotViewer.SavePath" value="$USER_HOME$/Desktop" />
+    <property name="WORKMANAGER_INSPECTOR_NOTIFICATION_DISMISSED" value="true" />
+    <property name="android-custom-view/Users/saurinshah/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.4.2/a0a6b931c735952c318e94c90b0239966c500c52/appcompat-1.4.2-sources.jar!/androidx/appcompat/widget/AppCompatEditText.java_SELECTED" value="AppCompatEditText" />
+    <property name="android-custom-view/Users/saurinshah/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.6.1/d4d703885d24c61bc0ec39a9a705969e41d773ef/material-1.6.1-sources.jar!/com/google/android/material/textfield/TextInputLayout.java_SELECTED" value="TextInputLayout" />
+    <property name="android-custom-view/home/tops/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.4.1/e175b7bc07d27826e7bf581f91adbdb622629ee/fragment-1.4.1-sources.jar!/androidx/fragment/app/FragmentContainerView.kt_SELECTED" value="FragmentContainerView" />
+    <property name="android-custom-view/home/tops/.gradle/caches/modules-2/files-2.1/com.github.amarjain07/StickyScrollView/1.0.2/df2fed3248615a559ad49d8055fe0ff0fd5006a4/StickyScrollView-1.0.2-sources.jar!/com/amar/library/ui/StickyScrollView.java_SELECTED" value="StickyScrollView" />
+    <property name="android-custom-view/home/tops/.gradle/caches/modules-2/files-2.1/com.github.barteksc/android-pdf-viewer/2.8.2/3a6875f9abac8b069fc55194cc8aa5b3a1fcaa7c/android-pdf-viewer-2.8.2-sources.jar!/com/github/barteksc/pdfviewer/PDFView.java_SELECTED" value="PDFView" />
+    <property name="android-custom-view/home/tops/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.6.1/d4d703885d24c61bc0ec39a9a705969e41d773ef/material-1.6.1-sources.jar!/com/google/android/material/navigation/NavigationView.java_SELECTED" value="NavigationView" />
+    <property name="android-custom-view/home/tops/Documents/Common Cents_final/commoncents_android/app/src/main/java/com/commoncents/utils/StickyScrollView.java_SELECTED" value="StickyScrollView" />
+    <property name="android-custom-view/home/tops/Documents/jeet_demo/Git_project/commoncents_android/app/src/main/java/com/commoncents/utils/StickyScrollView.java_SELECTED" value="StickyScrollView" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1664727886627" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packidoperation" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/retrieving/fragment" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/commoncents/utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/values" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.commoncents.ui.retrieving.quickScanFragment" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.commoncents.ui.auth.activity" />
+      <recent name="com.commoncents.ui.dashboard.packidoperation.fragment" />
+      <recent name="com.commoncents.ui.dashboard.packidoperation.adapter" />
+      <recent name="com.commoncents.core" />
+      <recent name="com.commoncents.view.dialog" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.commoncents.ui.dashboard.assignbrokenpallet.adapter" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Common_Cents.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+        <option name="PROFILING_MODE" value="NOT_SET" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="commoncents_android [assembleAndroidTest]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assembleAndroidTest" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="commoncents_android [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="commoncents_android" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="commoncents_android" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.commoncents_android [signingReport]" />
+        <item itemvalue="Gradle.commoncents_android [assembleAndroidTest]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9ab7b342-c62a-47c6-a621-4f89e67ca345" name="Changes" comment="" />
+      <created>1657612305164</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657612305164</updated>
+    </task>
+    <task id="LOCAL-00001" summary="- Setup the print-pack-id apis">
+      <created>1657613463198</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1657613463198</updated>
+    </task>
+    <task id="LOCAL-00002" summary="- Implement api of listing the packID&#10;- Implement api of assign location">
+      <created>1657693478450</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1657693478450</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- Implement apis in broken/damage pallet screen&#10;- Pick the image from the gallery , add the multiple photos and upload in server &#10;- Call the assign location API after successfully upload broken image">
+      <created>1657715923212</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657715923212</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- Implement assign location and broken pallet screen">
+      <created>1657859728254</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657859728254</updated>
+    </task>
+    <task id="LOCAL-00005" summary="- Create popup design of generate packID&#10;- Add the alert after packID generation">
+      <created>1657893756796</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657893756796</updated>
+    </task>
+    <task id="LOCAL-00006" summary="- Design change of single/multiple packID">
+      <created>1658138023624</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658138023624</updated>
+    </task>
+    <task id="LOCAL-00007" summary="- Change in assign location API with packID pass multiple time">
+      <created>1658216931701</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658216931701</updated>
+    </task>
+    <task id="LOCAL-00008" summary="- Manage the unknow button at the homescreen and other screen&#10;- Implement api of unknown print PO and unknowAll print PO">
+      <created>1658237807331</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658237807331</updated>
+    </task>
+    <task id="LOCAL-00009" summary="- Custom snackBar on bottom for the error/success message&#10;- Change api of search PO&#10;- Change api of printID">
+      <created>1658305588468</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658305588468</updated>
+    </task>
+    <task id="LOCAL-00010" summary="- UnKnow Single/All api calling &#10;- Design changes in assign/broken pallet">
+      <created>1658317285713</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658317285713</updated>
+    </task>
+    <task id="LOCAL-00011" summary="- UnKnow Single/All api calling &#10;- Design changes in assign/broken pallet">
+      <created>1658317298471</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1658317298471</updated>
+    </task>
+    <task id="LOCAL-00012" summary="- Filter design changes">
+      <created>1658374862389</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1658374862389</updated>
+    </task>
+    <task id="LOCAL-00013" summary="- Implement the api in view pack-ids">
+      <created>1658409219341</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1658409219341</updated>
+    </task>
+    <task id="LOCAL-00014" summary="- QR Code scan value added in delete packIDs screen">
+      <created>1658410334940</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1658410334940</updated>
+    </task>
+    <task id="LOCAL-00015" summary="- PDF Generation code added">
+      <created>1658496068387</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1658496068387</updated>
+    </task>
+    <task id="LOCAL-00016" summary="- One to one pdf generation&#10;- All together pdf generation&#10;- Implement the broken photos API &#10;- Redirect broken pallet screen from the packID operation&#10;- Generate and view PDF">
+      <created>1658749237242</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1658749237242</updated>
+    </task>
+    <task id="LOCAL-00017" summary="- Implement quick-scan API change&#10;- Most ones flow change &#10;- Create design of shipment &#10;- Implement shipment API">
+      <created>1658840185781</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1658840185781</updated>
+    </task>
+    <task id="LOCAL-00018" summary="- Add the viewPDF screen and load the pdf in application">
+      <created>1658900705702</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1658900705702</updated>
+    </task>
+    <task id="LOCAL-00019" summary="- View PDF code added in View packIDs screen">
+      <created>1658994973268</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1658994973268</updated>
+    </task>
+    <task id="LOCAL-00020" summary="- Unit test of the application and issue fixes">
+      <created>1659014498643</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1659014498643</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- Setup the print-pack-id apis" />
+    <MESSAGE value="- Implement api of listing the packID&#10;- Implement api of assign location" />
+    <MESSAGE value="- Implement apis in broken/damage pallet screen&#10;- Pick the image from the gallery , add the multiple photos and upload in server &#10;- Call the assign location API after successfully upload broken image" />
+    <MESSAGE value="- Implement assign location and broken pallet screen" />
+    <MESSAGE value="- Create popup design of generate packID&#10;- Add the alert after packID generation" />
+    <MESSAGE value="- Design change of single/multiple packID" />
+    <MESSAGE value="- Change in assign location API with packID pass multiple time" />
+    <MESSAGE value="- Manage the unknow button at the homescreen and other screen&#10;- Implement api of unknown print PO and unknowAll print PO" />
+    <MESSAGE value="- Custom snackBar on bottom for the error/success message&#10;- Change api of search PO&#10;- Change api of printID" />
+    <MESSAGE value="- UnKnow Single/All api calling &#10;- Design changes in assign/broken pallet" />
+    <MESSAGE value="- Filter design changes" />
+    <MESSAGE value="- Implement the api in view pack-ids" />
+    <MESSAGE value="- QR Code scan value added in delete packIDs screen" />
+    <MESSAGE value="- PDF Generation code added" />
+    <MESSAGE value="- One to one pdf generation&#10;- All together pdf generation&#10;- Implement the broken photos API &#10;- Redirect broken pallet screen from the packID operation&#10;- Generate and view PDF" />
+    <MESSAGE value="- Implement quick-scan API change&#10;- Most ones flow change &#10;- Create design of shipment &#10;- Implement shipment API" />
+    <MESSAGE value="- Add the viewPDF screen and load the pdf in application" />
+    <MESSAGE value="- View PDF code added in View packIDs screen" />
+    <MESSAGE value="- Unit test of the application and issue fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Unit test of the application and issue fixes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/utils/ViewUtils.kt</url>
+          <line>209</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/utils/ViewUtils.kt</url>
+          <line>200</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/utils/ViewUtils.kt</url>
+          <line>202</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/utils/ViewUtils.kt</url>
+          <line>222</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/viewmodel/PrintPackIDViewModel.kt</url>
+          <line>381</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/quickscan/viewmodel/SearchPOViewModel.kt</url>
+          <line>113</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/viewmodel/PrintPackIDViewModel.kt</url>
+          <line>270</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/viewmodel/PrintPackIDViewModel.kt</url>
+          <line>272</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/viewmodel/PrintPackIDViewModel.kt</url>
+          <line>295</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/viewmodel/PrintPackIDViewModel.kt</url>
+          <line>297</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/viewmodel/PrintPackIDViewModel.kt</url>
+          <line>306</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/viewmodel/PrintPackIDViewModel.kt</url>
+          <line>314</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/viewmodel/PrintPackIDViewModel.kt</url>
+          <line>282</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/viewmodel/PrintPackIDViewModel.kt</url>
+          <line>284</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/viewmodel/PrintPackIDViewModel.kt</url>
+          <line>275</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/viewmodel/PrintPackIDViewModel.kt</url>
+          <line>276</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/viewmodel/PrintPackIDViewModel.kt</url>
+          <line>278</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>535</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>531</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/quickscan/fragment/QuickscanFragment.kt</url>
+          <line>334</line>
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignbrokenpallet/viewmodel/PrintPackIDViewModel.kt</url>
+          <line>211</line>
+          <option name="timeStamp" value="258" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/view/dialog/PrintPackIDDialogFragment.kt</url>
+          <line>353</line>
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>503</line>
+          <option name="timeStamp" value="438" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>512</line>
+          <option name="timeStamp" value="439" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>514</line>
+          <option name="timeStamp" value="440" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>521</line>
+          <option name="timeStamp" value="441" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>522</line>
+          <option name="timeStamp" value="442" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>279</line>
+          <option name="timeStamp" value="445" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>281</line>
+          <option name="timeStamp" value="446" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>284</line>
+          <option name="timeStamp" value="447" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>285</line>
+          <option name="timeStamp" value="448" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>298</line>
+          <option name="timeStamp" value="449" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>299</line>
+          <option name="timeStamp" value="450" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>300</line>
+          <option name="timeStamp" value="451" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>303</line>
+          <option name="timeStamp" value="452" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>306</line>
+          <option name="timeStamp" value="453" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>81</line>
+          <option name="timeStamp" value="454" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>83</line>
+          <option name="timeStamp" value="455" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/view/dialog/PrintPackIDDialogFragment.kt</url>
+          <line>364</line>
+          <option name="timeStamp" value="456" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/view/dialog/PrintPackIDDialogFragment.kt</url>
+          <line>361</line>
+          <option name="timeStamp" value="457" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/view/dialog/PrintPackIDDialogFragment.kt</url>
+          <line>358</line>
+          <option name="timeStamp" value="458" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/view/dialog/PrintPackIDDialogFragment.kt</url>
+          <line>357</line>
+          <option name="timeStamp" value="459" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>126</line>
+          <option name="timeStamp" value="460" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>146</line>
+          <option name="timeStamp" value="462" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>150</line>
+          <option name="timeStamp" value="463" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>155</line>
+          <option name="timeStamp" value="464" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>186</line>
+          <option name="timeStamp" value="465" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>231</line>
+          <option name="timeStamp" value="466" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>482</line>
+          <option name="timeStamp" value="467" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>504</line>
+          <option name="timeStamp" value="469" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/assignpackid/fragment/AssignPackFragment.kt</url>
+          <line>162</line>
+          <option name="timeStamp" value="470" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/retrieving/viewModel/CheckPackIDVM.kt</url>
+          <line>84</line>
+          <option name="timeStamp" value="471" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/view/dialog/PrintPackIDDialogFragment.kt</url>
+          <line>129</line>
+          <option name="timeStamp" value="472" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/view/dialog/PrintPackIDDialogFragment.kt</url>
+          <line>166</line>
+          <option name="timeStamp" value="473" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/commoncents/ui/dashboard/packidoperation/fragment/PackIDOperationFragment.kt</url>
+          <line>145</line>
+          <option name="timeStamp" value="474" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Gkemon/Android-XML-to-PDF-Generator/2.6.2/978b66d217185b30a7bc42a93a6e62d296b897bf/Android-XML-to-PDF-Generator-2.6.2-sources.jar!/com/gkemon/XMLtoPDF/PdfGenerator.java</url>
+          <line>227</line>
+          <option name="timeStamp" value="321" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Gkemon/Android-XML-to-PDF-Generator/2.6.2/978b66d217185b30a7bc42a93a6e62d296b897bf/Android-XML-to-PDF-Generator-2.6.2-sources.jar!/com/gkemon/XMLtoPDF/PdfGenerator.java</url>
+          <line>224</line>
+          <option name="timeStamp" value="322" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Gkemon/Android-XML-to-PDF-Generator/2.6.2/978b66d217185b30a7bc42a93a6e62d296b897bf/Android-XML-to-PDF-Generator-2.6.2-sources.jar!/com/gkemon/XMLtoPDF/PdfGenerator.java</url>
+          <line>229</line>
+          <option name="timeStamp" value="323" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Gkemon/Android-XML-to-PDF-Generator/2.6.2/978b66d217185b30a7bc42a93a6e62d296b897bf/Android-XML-to-PDF-Generator-2.6.2-sources.jar!/com/gkemon/XMLtoPDF/PdfGenerator.java</url>
+          <line>221</line>
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Gkemon/Android-XML-to-PDF-Generator/2.6.2/978b66d217185b30a7bc42a93a6e62d296b897bf/Android-XML-to-PDF-Generator-2.6.2-sources.jar!/com/gkemon/XMLtoPDF/PdfGenerator.java</url>
+          <line>360</line>
+          <option name="timeStamp" value="325" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

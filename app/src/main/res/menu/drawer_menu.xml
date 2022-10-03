@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/myaccountFragment"
+            android:icon="@drawable/ic_account"
+            android:iconTint="@color/white"
+            android:title="@string/myaccount" />
+        <item
+            android:id="@+id/quickscanFragment"
+            android:icon="@drawable/ic_quickscan"
+            android:iconTint="@color/white"
+            android:title="@string/unloading" />
+
+        <item
+            android:id="@+id/packidoprationFragment"
+            android:icon="@drawable/ic_packid"
+            android:iconTint="@color/white"
+            android:title="@string/reprint_pack_id" />
+<!--        <item-->
+<!--            android:id="@+id/assignLocationFragment"-->
+<!--            android:icon="@drawable/ic_location"-->
+<!--            android:iconTint="@color/white"-->
+<!--            android:title="@string/assign_pack_id_location" />-->
+
+        <item
+            android:id="@+id/assignPackagingFragment"
+            android:icon="@drawable/ic_location"
+            android:iconTint="@color/white"
+            android:title="@string/assign_packaging" />
+
+<!--        <item-->
+<!--            android:id="@+id/assignPalletFragment"-->
+<!--            android:icon="@drawable/ic_pallet"-->
+<!--            android:iconTint="@color/white"-->
+<!--            android:title="@string/report_damage_pallet" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/packIDOperationFragment"-->
+<!--            android:icon="@drawable/ic_packid"-->
+<!--            android:iconTint="@color/white"-->
+<!--            android:title="@string/pdOperation" />-->
+
+
+        <item
+            android:id="@+id/breakDownFragment"
+            android:icon="@drawable/ic_pallet"
+            android:iconTint="@color/white"
+            android:title="@string/break_down" />
+
+        <item
+            android:id="@+id/assignRetrievingFragment"
+            android:icon="@drawable/ic_pallet"
+            android:iconTint="@color/white"
+            android:title="@string/scan_in" />
+
+
+        <item
+            android:id="@+id/logoutFragment"
+            android:icon="@drawable/ic_logout"
+            android:iconTint="@color/white"
+            android:title="@string/logout" />
+
+    </group>
+</menu>

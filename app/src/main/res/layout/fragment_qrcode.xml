@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.budiyev.android.codescanner.CodeScannerView
+            android:id="@+id/scannerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:autoFocusButtonVisible="false"
+            app:flashButtonVisible="false"
+            app:frameColor="@color/white"
+            app:frameCornersCapRounded="true"
+            app:frameCornersRadius="@dimen/_8sdp"
+            app:frameCornersSize="@dimen/_210sdp"
+            app:frameThickness="@dimen/_1sdp"
+            app:frameVisible="true"
+            app:maskColor="@color/bgcolor" />
+
+        <RelativeLayout
+            android:id="@+id/rlAnimView"
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_240sdp"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/imgLine"
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_minus10sdp"
+                android:background="@drawable/ic_orangeline" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/qrbg_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/scanqrcode"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

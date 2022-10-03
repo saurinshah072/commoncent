@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choosePackID" />
+
+
+
+        <LinearLayout
+            android:id="@+id/llSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edLocation"
+                android:background="@drawable/ic_bg_input"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="@dimen/_4sdp"
+                android:hint="@string/location"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingStart="@dimen/_8sdp"
+                android:textSize="@dimen/_11sdp"
+                android:fontFamily="@font/lato_regular"/>
+
+            <RelativeLayout
+                android:id="@+id/rlLocationQrCode"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/ic_bg_input">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_scanner" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llPackID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSearch"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <AutoCompleteTextView
+                android:id="@+id/edPackID"
+                android:completionThreshold="1"
+                android:background="@drawable/ic_bg_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="@dimen/_4sdp"
+                android:hint="@string/packid"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingStart="@dimen/_8sdp"
+                android:textSize="@dimen/_11sdp"
+                android:fontFamily="@font/lato_regular"/>
+
+            <RelativeLayout
+                android:id="@+id/rlPackIDQrCode"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/ic_bg_input">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_scanner" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:visibility="gone"
+            android:id="@+id/layout_packid_sv"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingHorizontal="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:scrollbars="vertical"
+            android:fillViewport="true">
+
+            <TextView
+                android:id="@+id/layout_packid_sv_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:text="PW0003-21,PW0003-22,PW0003-23,PW0003-24,PW0003-25,PW0003-26,PW0003-27,PW0003-28,PW0003-29,PW0003-30,"
+                android:layout_weight="1.0"/>
+        </ScrollView>
+
+        <Space
+            android:id="@+id/spacerTop"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_8sdp"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@drawable/ic_bg_input"
+            android:minHeight="@dimen/_50sdp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rlChipSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipsSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:gravity="center"
+                    app:chipSpacingHorizontal="@dimen/_8sdp" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <Space
+            android:id="@+id/spacerBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_8sdp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

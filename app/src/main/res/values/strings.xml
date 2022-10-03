@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">Common Cents</string>
+    <string name="ok">OK</string>
+    <string name="confirm">Confirm</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Log in</string>
+    <string name="btn_login">Login</string>
+    <string name="search">Search UPC</string>
+
+    <string name="ipo">Enter PO Number</string>
+
+    <string name="searchPO">Search PO Name</string>
+    <string name="searchPack">Search Pack ID</string>
+    <string name="selectdate">Select Date</string>
+    <string name="selectShipment">Select shipment number</string>
+
+
+    <string name="no_of_pack_id">Number of pack ID\'s</string>
+    <string name="start_pack_id">Pack ID Start</string>
+    <string name="end_pack_id">Pack ID End</string>
+
+
+    <string name="welcome">Welcome</string>
+    <string name="scanqrcode">Scan QR Code</string>
+    <string name="filters">Filters</string>
+    <string name="unknown">Unknown PO</string>
+    <string name="quickscan">Quick Scan</string>
+
+    <string name="assignLocation">Assign Location to the Pack ID</string>
+    <string name="retrieving">Receiving</string>
+    <string name="assignPallet">Assign Damage Pallet</string>
+    <string name="brokenPallet">Damage Pallet</string>
+
+
+    <string name="norecord">No data available.</string>
+
+    <string name="name">name</string>
+    <string name="clearAll">Clear All</string>
+    <string name="versionname">Version 1.0</string>
+    <string name="sname">supplier_name</string>
+
+    <string name="po_name">PO Name</string>
+
+    <string name="pdOperation">Pack ID operations</string>
+
+    <string name="viewpackID">View Pack IDs</string>
+    <string name="deletepackID">Delete Pack ID</string>
+    <string name="delete">Delete</string>
+
+
+
+
+    <string name="transition_app_icon">Common Cents icon</string>
+
+    <string name="nav_login">Login screen</string>
+    <string name="internetconnection">Please check your internet connection</string>
+
+    <string name="enter_username">Please enter username.</string>
+    <string name="valid_location">Please enter valid location.</string>
+    <string name="enter_password">Please enter password.</string>
+
+
+    <string name="enter_enter_location">Please enter location.</string>
+    <string name="enter_packID">Please select pack-id.</string>
+
+
+    <string name="permission_denied"><![CDATA[If you deny permissions you will not be able to upload pictures and videos. Please turn on permissions.\nGo to [Settings] > [Permissions]]]></string>
+
+
+    <string name="printpackid">Print Pack ID\'s</string>
+    <string name="assignID">Assign location to Pack ID</string>
+
+
+    <string name="assign_location">Assign Location</string>
+
+    <string name="onebyone">One by one</string>
+    <string name="alltogether">Altogether</string>
+    <string name="print">Generate</string>
+    <string name="assign">Assign</string>
+    <string name="assignLater">Assign Later</string>
+    <string name="location">Location</string>
+    <string name="locationAssign">Location successfully \nassigned.</string>
+    <string name="palletMarket">Pallet marked as broken \nsuccessfully.</string>
+    <string name="deletePackID">Are you sure you want to delete </string>
+
+
+    <string name="inputLocation">Kindly input the location for this pack ID </string>
+
+    <string name="printpackMsg">Do you want to print pack ID\'s one by one or altogether.</string>
+    <string name="packid">Pack ID</string>
+
+
+    <string name="choosePackID">Please scan the location and pack id.</string>
+    <string name="choosePackIDandLocation">Kindly choose the pack ID and location.</string>
+
+
+    <string name="upload_photos">Upload Photos</string>
+    <string name="add_photo">Add a photo</string>
+
+    <string name="Camera">Camera</string>
+    <string name="Gallery">Gallery</string>
+    <string name="Drive">Drive</string>
+
+
+    <string name="alertPackID">Kindly note that on clicking of \'Generate\'
+        the pack ID will be generated.</string>
+
+    <string name="packIDGenerated"> is successfully generated.
+        \nYou can click on \'View PDF\' to view the same.</string>
+
+    <string name="wehave">We have generated</string>
+    <string name="starting">pack ID\'s starting from</string>
+    <string name="view">Kindly click on \'View pdf\' to view the same.</string>
+
+    <string name="viewpdf">View PDF</string>
+    <string name="packIDs">Pack ID\'s</string>
+
+    <string name="mostRecents">Most Recent Ones</string>
+    <string name="unknownPO">Unknown PO</string>
+
+
+    <string name="popupWindow">Kindly note that they will only appear if they are generated.</string>
+
+
+
+    <string name="capture">Capture More Photo</string>
+    <string name="liketoAdd">Do you like to capture more photo ? </string>
+    <string name="pleaseEnterNo">Please enter no of pack id\'s</string>
+    <string name="pleaseselect">Please select shipment</string>
+    <string name="already">Value already exists.</string>
+    <string name="off">off</string>
+    <string name="on">on</string>
+    <string name="enterpoName">Please enter PO Name</string>
+
+    <string name="tag">sticky</string>
+    <string name="supplier_name">Supplier Name</string>
+    <string name="qty">Qty</string>
+    <string name="sku">No. of SKU</string>
+
+    <!-- Retrieving Form text -->
+    <string name="btn_submit">Submit</string>
+    <string name="retrieving_po_name">PO Name</string>
+    <string name="retrieving_location">Location</string>
+    <string name="retrieving_pack_id">Pack ID</string>
+    <string name="retrieving_scan_upc">Scanned UPC</string>
+    <string name="retrieving_unit_measure">Select Unit of Measure</string>
+    <string name="retrieving_expected_upc">Expected UPC</string>
+    <string name="retrieving_date">Select Date</string>
+    <string name="retrieving_quantity">Add Quantity</string>
+    <string name="retrieving_condition">Select Condition</string>
+    <!-- -->
+    <string name="pack_id_operation">Pack ID Operation</string>
+    <string name="pack_id_images">Images</string>
+    <string name="pack_id_not_assign">Assign Purchase Order</string>
+    <!-- -->
+    <string name="value_print_msg">Please select the shipment and insert how many pack ids you want to generate.</string>
+    <string name="value_print">Enter value for print pack id</string>
+    <string name="remove_photo">Remove Photos</string>
+    <!-- Drawer Option -->
+    <string name="myaccount">My Account</string>
+    <string name="assign_packaging">Assign Packaging</string>
+    <string name="assign_pack_id_location">Assign Pack ID Location</string>
+    <string name="reprint_pack_id">Reprint Pack IDs</string>
+    <string name="unloading">Unloading</string>
+    <string name="report_damage_pallet">Report Damaged Pallet</string>
+    <string name="break_down">Break Down</string>
+    <string name="scan_in">Scan In</string>
+    <string name="logout">Logout</string>
+    <string name="scan_pack_id">Scan PACK ID</string>
+    <string name="scan_upc">Scan UPC</string>
+    <string name="case_upc">Case UPC</string>
+    <string name="sleeve_upc">Sleeve UPC</string>
+    <string name="unit_per_case">Unit Per Case</string>
+    <string name="add_Case_upc">Add Case UPC</string>
+    <string name="add_Sleeve_upc">Add Sleeve UPC</string>
+    <string name="unit_per_sleeve">Unit Per Sleeve</string>
+    <string name="expiration_date">Expiration Date</string>
+    <string name="quantity">Quantity</string>
+    <string name="select_unit_of_measure">Select Unit of Measure</string>
+<!--    <string-array name="unit_measure_array">-->
+<!--        <item>Select Unit of Measure</item>-->
+<!--        <item>ES</item>-->
+<!--        <item>CS</item>-->
+<!--        <item>SL</item>-->
+<!--    </string-array>-->
+</resources>

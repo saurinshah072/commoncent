@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/_20sdp"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewPackIdImages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:outlineProvider="bounds"
+        android:clipToPadding="false"
+        android:background="@color/edittext"
+        android:elevation="@dimen/_1sdp"
+        android:orientation="vertical"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:itemCount="7"
+        tools:scrollbars="vertical"
+        tools:spanCount="3"
+        tools:orientation="vertical"
+        tools:listitem="@layout/row_packid_images"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:visibility="gone"
+        android:id="@+id/packid_image_delete_acb"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        style="@style/btnBigStyle"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_btn_login"
+        android:text="Delete Selected Photo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/packid_image_remove_acb"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        style="@style/btnBigStyle"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_btn_login"
+        android:text="@string/remove_photo" />
+
+</LinearLayout>

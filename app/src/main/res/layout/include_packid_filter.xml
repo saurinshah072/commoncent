@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/llFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitle"
+            style="@style/textviewColumnBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filters" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgInfo"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_toEndOf="@+id/txtTitle"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/info" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:padding="@dimen/_4sdp"
+            android:rotation="180"
+            android:src="@drawable/ic_uparrow" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llSearchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edSearchPoName"
+                style="@style/edittextviewWhiteStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="@dimen/_4sdp"
+                android:hint="@string/searchPO"
+                android:inputType="text"
+                android:paddingStart="@dimen/_8sdp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edPackID"
+                style="@style/edittextviewWhiteStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:completionThreshold="1"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="@dimen/_4sdp"
+                android:hint="@string/searchPack"
+                android:imeOptions="actionDone"
+                android:minHeight="@dimen/_40sdp"
+                android:paddingStart="@dimen/_8sdp" />
+
+            <RelativeLayout
+                android:id="@+id/rlQrCode"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/ic_bg_input_white">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_scanner" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <Space
+            android:id="@+id/spacerTop"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_8sdp"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/ic_bg_input_white"
+            android:minHeight="@dimen/_50sdp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rlChipSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipsSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:gravity="center"
+                    app:chipSpacingHorizontal="@dimen/_8sdp" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <Space
+            android:id="@+id/spacerBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_8sdp"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtSelectDate"
+                style="@style/edittextviewWhiteStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:drawablePadding="@dimen/_4sdp"
+                android:drawableTint="#B3C4C9"
+                android:hint="@string/selectdate"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingRight="@dimen/_8sdp" />
+
+            <ImageView
+                android:id="@+id/imgClose"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_close"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

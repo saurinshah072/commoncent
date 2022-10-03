@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">@dimen/_16sdp</dimen>
+    <dimen name="activity_vertical_margin">@dimen/_16sdp</dimen>
+
+    <dimen name="design_navigation_padding_top_default" tools:override="true">5dp</dimen>
+    <dimen name="design_navigation_separator_vertical_padding" tools:override="true">0dp</dimen>
+    <dimen name="design_navigation_padding_bottom" tools:override="true">5dp</dimen>
+    <dimen name="design_navigation_icon_size" tools:override="true">20dp</dimen>
+    <dimen name="design_navigation_icon_padding" tools:override="true">12dp</dimen>
+    <!--TODO : COMMON PADDING-->
+    <dimen name="action_bar_button_padding">@dimen/_12sdp</dimen>
+    <dimen name="action_bar_button_padding_half">@dimen/_6sdp</dimen>
+    <dimen name="common_margin_16">@dimen/_16sdp</dimen>
+    <dimen name="common_margin_10">@dimen/_10sdp</dimen>
+    <dimen name="common_margin_8">@dimen/_8sdp</dimen>
+    <dimen name="margin_8">@dimen/_8sdp</dimen>
+    <dimen name="common_margin_5">@dimen/_5sdp</dimen>
+    <dimen name="mandatory_padding">@dimen/_3sdp</dimen>
+
+    <!--TODO : COMMON DIMENS-->
+    <dimen name="txt_size">@dimen/_12sdp</dimen>
+    <dimen name="txt_small_size">@dimen/_10sdp</dimen>
+    <dimen name="txt_extra_small_size">@dimen/_8sdp</dimen>
+    <dimen name="txt_large_size">@dimen/_14sdp</dimen>
+    <dimen name="txt_extra_large_size">@dimen/_16sdp</dimen>
+    <dimen name="txt_2x_extra_large_size">@dimen/_20sdp</dimen>
+    <dimen name="txt_3x_extra_large_size">@dimen/_24sdp</dimen>
+    <dimen name="card_corner_size">@dimen/_10sdp</dimen>
+    <dimen name="edt_corner_size">@dimen/_3sdp</dimen>
+    <dimen name="btn_corner_size">@dimen/_3sdp</dimen>
+
+    <!--TODO : COMMON CONTROL-->
+    <dimen name="img_height">@dimen/_30sdp</dimen>
+    <dimen name="edt_height">@dimen/_35sdp</dimen>
+    <dimen name="btn_height">@dimen/_35sdp</dimen>
+    <dimen name="txt_height">@dimen/_35sdp</dimen>
+    <dimen name="chk_height">@dimen/_15sdp</dimen>
+    <dimen name="spinner_item_height">@dimen/_35sdp</dimen>
+    <dimen name="nav_header_height">@dimen/_120sdp</dimen>
+
+
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="section_height">140dp</dimen>
+    <dimen name="margins">16dp</dimen>
+
+
+</resources>

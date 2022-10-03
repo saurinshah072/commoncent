@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.commoncents.utils.StickyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:id="@+id/stickyScrollview">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/pack_id_opration_delete_ll"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/pack_id_opration_delete_acb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:background="@drawable/ic_btn_login"
+                android:gravity="center"
+                style="@style/btnBigStyle"
+                android:text="@string/deletepackID" />
+        </LinearLayout>
+        <!-- Filter View  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/fragment_packid_operation_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textviewColumnBlack"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txtTitle"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filters" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/fragment_packid_operation_aciv"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:rotation="180"
+                    android:src="@drawable/ic_uparrow" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/fragment_packid_operation_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/fragment_packid_operation_acet"
+                        style="@style/edittextviewWhiteStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_search"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:hint="Search Pack ID"
+                        android:imeOptions="actionDone"
+                        android:paddingStart="@dimen/_8sdp" />
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_operation_packid_scanner_rl"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/ic_bg_input_white">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scanner" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/fragment_packid_operation_po_acet"
+                        style="@style/edittextviewWhiteStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_search"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:hint="Search PO"
+                        android:imeOptions="actionDone"
+                        android:paddingStart="@dimen/_8sdp" />
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_operation_searchpo_scanner_rl"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/ic_bg_input_white">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scanner" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/fragment_packid_operation_date_actv"
+                        style="@style/edittextviewWhiteStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:drawableLeft="@drawable/ic_calendar"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:drawableTint="#B3C4C9"
+                        android:hint="@string/selectdate"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:paddingRight="@dimen/_8sdp" />
+                    <ImageView
+                        android:id="@+id/fragment_packid_operation_close_iv"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/ic_close"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_12sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="@dimen/_30sdp"-->
+    <!--                        android:layout_weight="1"-->
+    <!--                        android:fontFamily="@font/lato_bold"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:paddingRight="@dimen/_5sdp"-->
+    <!--                        android:text="Most Recent"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="@dimen/_12sdp" />-->
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/fragment_packid_operation_recent_sc"
+                            android:checked="true"
+                            android:text="Most Recent "
+                            android:textOff=""
+                            android:textOn=""
+                            app:showText="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="@dimen/_30sdp"-->
+    <!--                        android:layout_weight="1"-->
+    <!--                        android:fontFamily="@font/lato_bold"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:paddingRight="@dimen/_5sdp"-->
+    <!--                        android:text="Unknown PO"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="@dimen/_12sdp" />-->
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/fragment_packid_operation_unknownpo_sc"
+                            android:checked="false"
+                            android:text="Unknown PO "
+                            android:textOff=""
+                            android:textOn=""
+                            app:showText="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!--  -->
+        <LinearLayout
+            android:id="@+id/fragment_packid_operation_header"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_columnbg"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:paddingRight="@dimen/_5sdp"
+                android:text="Pack ID"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_columnbg"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:paddingRight="@dimen/_5sdp"
+                android:text="Images"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_columnbg"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:paddingRight="@dimen/_5sdp"
+                android:text="PDF"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8sdp" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewPackIdOpration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:outlineProvider="bounds"
+            android:clipToPadding="false"
+            android:background="@color/edittext"
+            android:elevation="@dimen/_1sdp"
+            android:orientation="vertical"
+            tools:itemCount="5"
+            tools:listitem="@layout/row_packid_adapter"
+            tools:orientation="vertical" />
+    </LinearLayout>
+</com.commoncents.utils.StickyScrollView>

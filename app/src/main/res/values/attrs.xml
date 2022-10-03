@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StickyScrollView">
+        <attr name="stuckShadowHeight" format="dimension" />
+        <attr name="stuckShadowDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RetrievingForm">
+        <attr name="isViewVisible" format="boolean" />
+        <attr name="iconName" format="string" />
+        <attr name="title" format="string" />
+        <attr name="etHint" format="string" />
+        <attr name="isLeftIcon" format="boolean" />
+        <attr name="isRightIcon" format="boolean" />
+    </declare-styleable>
+
+</resources>
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/assign_packaging_broken_ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/assign_packaging_broken_include"
+            layout="@layout/layout_brokenpallet_container" />
+        <CheckBox
+            android:id="@+id/assign_packaging_broken_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="is pallet damage"
+            android:textSize="14sp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:checked="false"
+            android:textColor="@color/gray_text"
+            android:theme="@style/CheckBoxStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/assign_packaging_image_upload_ll"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/assign_packaging_broken_ll"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:layout_marginBottom="@dimen/_14sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_photos" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/assign_packaging_photo_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/assign_packaging_add_photo_iv"
+            android:src="@drawable/add_photo" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/assign_packaging_submit_rl"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/assign_packaging_submit_acb"
+            style="@style/btnBigStyle"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_btn_login"
+            android:text="@string/btn_submit" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

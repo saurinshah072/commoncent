@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--primary colors-->
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#333333</color>
+    <color name="light_black">#3D3D3D</color>
+    <color name="black">#000000</color>
+    <color name="bgcolor">#121212</color>
+
+
+    <color name="dark_blue">#015691</color>
+    <color name="blue_bg">#0070BF</color>
+    <color name="black_text">#1E293B</color>
+    <color name="gray_text">#64748B</color>
+    <color name="blue_btn">#315F78</color>
+    <color name="edittext">#F2F5F6</color>
+    <color name="orange">#FF7907</color>
+    <color name="textcolor">#344653</color>
+    <color name="edithintcolor">#B3C4C9</color>
+
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="error_text">#FF0000</color>
+
+</resources>

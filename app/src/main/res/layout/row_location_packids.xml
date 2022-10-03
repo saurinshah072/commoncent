@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/row_location_packid_cb"
+        android:layout_alignParentRight="true"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/CheckBoxStyle"/>
+
+    <TextView
+        android:id="@+id/row_location_packid_tv_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:ellipsize="end"
+        android:gravity="center"
+        tools:text="test"
+        android:maxLines="2"
+        android:minHeight="@dimen/_30sdp"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/_14sdp" />
+</LinearLayout>

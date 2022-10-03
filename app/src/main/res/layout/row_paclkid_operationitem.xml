@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/edittext"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:gravity="start|center_vertical"
+            android:minHeight="@dimen/_30sdp"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/txtViewPackID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_weight="0.7"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:minHeight="@dimen/_30sdp"
+            android:padding="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="@string/viewpdf"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/_11sdp" />
+
+        <ImageView
+            android:id="@+id/imgViewPdf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:src="@drawable/ic_viewpdf"
+            android:visibility="invisible"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7" />
+
+    </LinearLayout>
+</LinearLayout>

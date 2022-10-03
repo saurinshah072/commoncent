@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <!--- Break Down flow -->
+    <LinearLayout
+        android:id="@+id/break_down_container_view_rl"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/llPackID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <AutoCompleteTextView
+                android:id="@+id/edPackID"
+                android:background="@drawable/ic_bg_input"
+                android:completionThreshold="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="@dimen/_4sdp"
+                android:hint="Scan Pack Id"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textSize="@dimen/_11sdp"
+                android:fontFamily="@font/lato_regular"
+                android:paddingStart="@dimen/_8sdp" />
+
+            <RelativeLayout
+                android:id="@+id/rlPackIDQrCode"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/ic_bg_input">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_scanner" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--- RePrint Pack ID -->
+    <LinearLayout
+        android:id="@+id/reprint_container_view_rl"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <AutoCompleteTextView
+                android:id="@+id/reprint_scan_pack_id_act"
+                android:background="@drawable/ic_bg_input"
+                android:completionThreshold="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="@dimen/_4sdp"
+                android:hint="Scan Pack Id"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textSize="@dimen/_11sdp"
+                android:fontFamily="@font/lato_regular"
+                android:paddingStart="@dimen/_8sdp" />
+
+            <RelativeLayout
+                android:id="@+id/reprint_scan_pack_id_rl"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/ic_bg_input">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_scanner" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <AutoCompleteTextView
+                android:id="@+id/reprint_add_location_act"
+                android:background="@drawable/ic_bg_input"
+                android:completionThreshold="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="@dimen/_4sdp"
+                android:hint="Add Location"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textSize="@dimen/_11sdp"
+                android:fontFamily="@font/lato_regular"
+                android:paddingStart="@dimen/_8sdp" />
+
+            <RelativeLayout
+                android:id="@+id/reprint_add_location_rl"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/ic_bg_input">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_location" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--- Break Down flow -->
+    <RelativeLayout
+        android:id="@+id/break_down_button_view_rl"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/break_down_start_acb"
+                style="@style/btnBigStyle_break_down"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_btn_login"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="Start Break Down" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reprint_button_view_rl"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/reprint_reprint_acb"
+                style="@style/btnBigStyle_break_down"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_btn_login"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="Re-Print" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/reprint_move_next_acb"
+                style="@style/btnBigStyle_break_down"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_btn_login"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="Move to next" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

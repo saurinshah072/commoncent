@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../Android/Sdk/platforms/android-32/data/res/layout/select_dialog_item.xml" value="0.12273550724637682" />
+        <entry key="..\:/TOPS/Projects/Common Cents/SourceCode/Common Cents/app/src/main/res/drawable/ic_account.xml" value="0.201" />
+        <entry key="..\:/TOPS/Projects/Common Cents/SourceCode/Common Cents/app/src/main/res/drawable/ic_location.xml" value="0.201" />
+        <entry key="..\:/TOPS/Projects/Common Cents/SourceCode/Common Cents/app/src/main/res/drawable/ic_logout.xml" value="0.201" />
+        <entry key="..\:/TOPS/Projects/Common Cents/SourceCode/Common Cents/app/src/main/res/drawable/ic_pallet.xml" value="0.201" />
+        <entry key="..\:/TOPS/Projects/Common Cents/SourceCode/Common Cents/app/src/main/res/drawable/ic_quickscan.xml" value="0.201" />
+        <entry key="..\:/TOPS/Projects/Common Cents/SourceCode/Common Cents/app/src/main/res/layout/activity_dashboard.xml" value="0.31666666666666665" />
+        <entry key="..\:/TOPS/Projects/Common Cents/SourceCode/Common Cents/app/src/main/res/layout/custom_popup_locationassign_layout.xml" value="0.31666666666666665" />
+        <entry key="..\:/TOPS/Projects/Common Cents/SourceCode/Common Cents/app/src/main/res/menu/drawer_menu.xml" value="0.31666666666666665" />
+        <entry key="app/src/main/res/drawable/add_photo.xml" value="0.1315" />
+        <entry key="app/src/main/res/drawable/bottomsheet_box.xml" value="0.1315" />
+        <entry key="app/src/main/res/drawable/default_image.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/drawerbg.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/ic_arrow_bottom.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable/ic_bg_input.xml" value="0.1675" />
+        <entry key="app/src/main/res/drawable/ic_bg_popup.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable/ic_columnbg.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable/ic_columnbg_.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/ic_packid.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable/ic_pallet.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable/info.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/retreving.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable/snackbarbg.xml" value="0.18" />
+        <entry key="app/src/main/res/drawable/switch_unfill.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable/view_.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/viewpdf.xml" value="0.1655" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login_signup.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_sticky.xml" value="0.12273550724637682" />
+        <entry key="app/src/main/res/layout/custom_popup_capturephoto_layout.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/custom_popup_locationassign_layout.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/custom_popup_printpackid_layout.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/custom_popup_success_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/custom_popup_viewpdf_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/custom_toolbar.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/dialog_common.xml" value="0.18802083333333333" />
+        <entry key="app/src/main/res/layout/dialog_progress.xml" value="0.12273550724637682" />
+        <entry key="app/src/main/res/layout/fragment_assign_packaging.xml" value="0.22552083333333334" />
+        <entry key="app/src/main/res/layout/fragment_breakdown.xml" value="0.22552083333333334" />
+        <entry key="app/src/main/res/layout/fragment_brokenpallet.xml" value="0.22317596566523606" />
+        <entry key="app/src/main/res/layout/fragment_full_image.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.12273550724637682" />
+        <entry key="app/src/main/res/layout/fragment_myaccount.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/fragment_packid_images.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/fragment_packid_not_assinged.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/fragment_packidoperation.xml" value="0.21011673151750973" />
+        <entry key="app/src/main/res/layout/fragment_packlocation.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_qrcode.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_quickscan.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_retrieving.xml" value="0.26067962646484377" />
+        <entry key="app/src/main/res/layout/fragment_retrieving_form.xml" value="0.221875" />
+        <entry key="app/src/main/res/layout/fragment_retrieving_result.xml" value="0.221875" />
+        <entry key="app/src/main/res/layout/fragment_viewpdf.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/include_assign_location.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/include_bottom.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/include_deletepackid.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/include_filter.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/include_packid_filter.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/include_search_filter.xml" value="0.30542755126953125" />
+        <entry key="app/src/main/res/layout/include_topview.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/layout_brokenpallet_container.xml" value="0.24829254150390623" />
+        <entry key="app/src/main/res/layout/layout_packid_container.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/layout_pdf.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/layout_pdfgenerate.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/layout_popupwindow.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/layout_sticky.xml" value="0.12273550724637682" />
+        <entry key="app/src/main/res/layout/my_snackbar.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/raw_pdf_item.xml" value="0.12273550724637682" />
+        <entry key="app/src/main/res/layout/retrieving_form.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_assignitem.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_clearall.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/row_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_location_packids.xml" value="0.22552083333333334" />
+        <entry key="app/src/main/res/layout/row_packid_adapter.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/row_packid_images.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/row_packiditem.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/row_paclid_operationitem.xml" value="0.12273550724637682" />
+        <entry key="app/src/main/res/layout/row_paclkid_operationitem.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/row_pdf_item.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/row_photos.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/row_search_retrieving.xml" value="0.1570510864257812" />
+        <entry key="app/src/main/res/layout/row_searchitem.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/row_shipment.xml" value="0.20985401459854014" />
+        <entry key="app/src/main/res/layout/sticky.xml" value="0.12273550724637682" />
+        <entry key="app/src/main/res/menu/drawer_menu.xml" value="0.14537037037037037" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
