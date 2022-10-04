@@ -51,8 +51,6 @@
     <string name="delete">Delete</string>
 
 
-
-
     <string name="transition_app_icon">Common Cents icon</string>
 
     <string name="nav_login">Login screen</string>
@@ -125,7 +123,6 @@
     <string name="popupWindow">Kindly note that they will only appear if they are generated.</string>
 
 
-
     <string name="capture">Capture More Photo</string>
     <string name="liketoAdd">Do you like to capture more photo ? </string>
     <string name="pleaseEnterNo">Please enter no of pack id\'s</string>
@@ -180,10 +177,19 @@
     <string name="expiration_date">Expiration Date</string>
     <string name="quantity">Quantity</string>
     <string name="select_unit_of_measure">Select Unit of Measure</string>
-<!--    <string-array name="unit_measure_array">-->
-<!--        <item>Select Unit of Measure</item>-->
-<!--        <item>ES</item>-->
-<!--        <item>CS</item>-->
-<!--        <item>SL</item>-->
-<!--    </string-array>-->
+    <string name="picking">Picking</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_pallet">Select Pallet</string>
+    <string name="bol_001001">BOL: 001001</string>
+    <string name="pallet_14">Pallet: 14</string>
+    <string name="priority_task">Priority Task</string>
+    <string name="unique_upcs_10">Unique UPCs: 10</string>
+    <string name="total_units_120">Total Units: 120</string>
+    <!--    <string-array name="unit_measure_array">-->
+    <!--        <item>Select Unit of Measure</item>-->
+    <!--        <item>ES</item>-->
+    <!--        <item>CS</item>-->
+    <!--        <item>SL</item>-->
+    <!--    </string-array>-->
 </resources>

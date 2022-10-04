@@ -56,6 +56,12 @@
             android:iconTint="@color/white"
             android:title="@string/scan_in" />
 
+        <item
+            android:id="@+id/pickingFragment"
+            android:icon="@drawable/ic_pallet"
+            android:iconTint="@color/white"
+            android:title="@string/picking" />
+
 
         <item
             android:id="@+id/logoutFragment"

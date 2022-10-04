@@ -62,6 +62,16 @@
     </fragment>
 
     <fragment
+        android:id="@+id/pickingFragment"
+        android:name="com.commoncents.ui.picking.fragment.PickingFragment"
+        android:label="@string/picking"
+        tools:layout="@layout/fragment_picking">
+        <action
+            android:id="@+id/action_qrcode"
+            app:destination="@id/qrcodeScanFragment" />
+    </fragment>
+
+    <fragment
         android:id="@+id/packIdImageFragment"
         android:name="com.commoncents.ui.dashboard.packidoperation.fragment.PackIDImageFragment"
         android:label="@string/pack_id_images"></fragment>
@@ -91,7 +101,7 @@
     <fragment
         android:id="@+id/pacIDNotAssignedFragment"
         android:name="com.commoncents.ui.retrieving.quickScanFragment.PacIDNotAssignedFragment"
-        android:label="@string/pack_id_not_assign">
+        android:label="@string/pack_id_not_assign"
         tools:layout="@layout/fragment_quickscan">
         <action
             android:id="@+id/action_qrcode"

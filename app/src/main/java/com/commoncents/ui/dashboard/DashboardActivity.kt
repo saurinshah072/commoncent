@@ -141,6 +141,7 @@ class DashboardActivity : BaseActivity(), NavigationView.OnNavigationItemSelecte
                 navController!!.navigate(R.id.packIDOperationFragment,bundle)
             }
             R.id.assignRetrievingFragment -> navController!!.navigate(R.id.retrievingFragment)
+            R.id.pickingFragment -> navController!!.navigate(R.id.pickingFragment)
             R.id.assignPackagingFragment -> navController!!.navigate(R.id.assignPackagingFragment)
             R.id.breakDownFragment -> navController!!.navigate(R.id.breakDownFragment)
             R.id.logoutFragment -> {
