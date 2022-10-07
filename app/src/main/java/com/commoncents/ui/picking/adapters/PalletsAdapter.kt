@@ -29,7 +29,7 @@ class PalletsAdapter(
             rvPalletsItems.adapter = PalletsItemAdapter(context, object :
                 PalletItemClicks {
                 override fun getPalletItemPosition(position: Int) {
-
+                    palletClicks.getPalletPosition(position)
                 }
             })
 

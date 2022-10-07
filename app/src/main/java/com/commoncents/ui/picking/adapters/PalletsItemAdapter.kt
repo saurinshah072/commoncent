@@ -26,7 +26,9 @@ class PalletsItemAdapter(
 
     override fun onBindViewHolder(holder: PalletsItemHolder, position: Int) {
         with(holder.binding) {
-
+            llRowItem.setOnClickListener {
+                palletItemClicks.getPalletItemPosition(position)
+            }
         }
     }
 

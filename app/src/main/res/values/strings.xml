@@ -186,6 +186,31 @@
     <string name="priority_task">Priority Task</string>
     <string name="unique_upcs_10">Unique UPCs: 10</string>
     <string name="total_units_120">Total Units: 120</string>
+    <string name="picking_details">Picking Details</string>
+    <string name="expected_location_19a11">Expected Location: 19A11</string>
+    <string name="upc">UPC</string>
+    <string name="expected_upc_12312321">Expected UPC: 12312321</string>
+    <string name="expected_case_upc_1231">Expected Case UPC: 1231</string>
+    <string name="expected_sleeve_upc_123">Expected Sleeve UPC: 123</string>
+    <string name="scanned_uom">Scanned UOM</string>
+    <string name="units_per_uom">Units Per UOM</string>
+    <string name="_8_units">8 Units</string>
+    <string name="expected_expiration_date">Expected Expiration Date:</string>
+    <string name="_09_24_23">09/24/23</string>
+    <string name="units">Units</string>
+    <string name="expected_units">Expected Units:</string>
+    <string name="_3_5_cs_28_units">3.5 CS (28 Units)</string>
+    <string name="pack_id">Pack ID</string>
+    <string name="expected_pack_id">Expected PackID:</string>
+    <string name="a12312">A12312</string>
+    <string name="_2">2</string>
+    <string name="abc_123">ABC 123</string>
+    <string name="submit_pick">Submit Pick</string>
+    <string name="please_scan_pallets_current">Please scan pallets current location before leaving this screen</string>
+    <string name="cancel">Cancel</string>
+    <string name="_19_a_1111">19-A-1111</string>
+    <string name="too_many_items_picked">Too many items picked, please put back the extra and re pack the item</string>
+    <string name="over_picked_item">Over Picked Item</string>
     <!--    <string-array name="unit_measure_array">-->
     <!--        <item>Select Unit of Measure</item>-->
     <!--        <item>ES</item>-->

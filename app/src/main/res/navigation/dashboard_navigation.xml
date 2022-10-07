@@ -74,12 +74,17 @@
     <fragment
         android:id="@+id/packIdImageFragment"
         android:name="com.commoncents.ui.dashboard.packidoperation.fragment.PackIDImageFragment"
-        android:label="@string/pack_id_images"></fragment>
+        android:label="@string/pack_id_images" />
+
+    <fragment
+        android:id="@+id/pickingDetailsFragment"
+        android:name="com.commoncents.ui.picking.fragment.PickingDetailsFragment"
+        android:label="@string/picking_details" />
 
     <fragment
         android:id="@+id/fullImageFragment"
         android:name="com.commoncents.ui.dashboard.packidoperation.fragment.FullImageFragment"
-        android:label="@string/pack_id_images"></fragment>
+        android:label="@string/pack_id_images" />
     <fragment
         android:id="@+id/packIDOperationFragment"
         android:name="com.commoncents.ui.dashboard.packidoperation.fragment.PackIDOperationFragment"
