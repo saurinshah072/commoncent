@@ -251,9 +251,12 @@ class QuickscanFragment : BaseFragment(), View.OnClickListener {
                 if (poNumber.isEmpty()) {
                     page = 1
                 }
-                handler.postDelayed({
-                    loadApis(true)
-                }, Constants.DELAY)
+
+                if (binding.filterView.llSearchview.visibility == View.VISIBLE) {
+                    handler.postDelayed({
+                        loadApis(true)
+                    }, Constants.DELAY)
+                }
             }
         })
 

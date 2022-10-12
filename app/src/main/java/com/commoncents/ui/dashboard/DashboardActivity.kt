@@ -9,6 +9,7 @@ import androidx.core.view.GravityCompat
 import androidx.navigation.NavController
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI.navigateUp
 import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
 import androidx.navigation.ui.NavigationUI.setupWithNavController
@@ -27,6 +28,9 @@ import de.hdodenhof.circleimageview.CircleImageView
 
 
 class DashboardActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener {
+
+    private lateinit var appBarConfiguration: AppBarConfiguration
+
     private var navController: NavController? = null
     private lateinit var binding: ActivityDashboardBinding
     private lateinit var mCrash: FirebaseCrashlytics
@@ -38,14 +42,14 @@ class DashboardActivity : BaseActivity(), NavigationView.OnNavigationItemSelecte
         getHeaderView()
         setupNavigation()
         getUnKnowTextView()
-        mCrash =  FirebaseCrashlytics.getInstance()
+        mCrash = FirebaseCrashlytics.getInstance()
     }
 
     fun getUnKnowTextView(): TextView {
         return binding.txUnKnowIPO
     }
 
-    fun hideUnHideUnKnowPO(flag:Boolean){
+    fun hideUnHideUnKnowPO(flag: Boolean) {
         val navHostFragment: NavHostFragment? =
             supportFragmentManager.findFragmentById(R.id.fragment) as NavHostFragment?
         when (navHostFragment!!.childFragmentManager.fragments[0]) {
@@ -53,9 +57,9 @@ class DashboardActivity : BaseActivity(), NavigationView.OnNavigationItemSelecte
                 getUnKnowTextView().text = getString(R.string.unknown)
             }
             is PackIDOperationFragment -> {
-                if(flag){
+                if (flag) {
                     getUnKnowTextView().text = getString(R.string.assign_location)
-                }else{
+                } else {
                     getUnKnowTextView().text = ""
                 }
             }
@@ -77,6 +81,18 @@ class DashboardActivity : BaseActivity(), NavigationView.OnNavigationItemSelecte
 
         txtName.text = preferences.getUserData().user!!.name
         txtEmail.text = preferences.getUserData().user!!.email
+
+        appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.myaccountFragment,
+                R.id.quickscanFragment,
+                R.id.packIDOperationFragment,
+                R.id.assignPackagingFragment,
+                R.id.breakDownFragment,
+                R.id.retrievingFragment,
+                R.id.pickingFragment,
+            ), binding.drawerLayout
+        )
     }
 
     // Setting Up One Time Navigation
@@ -92,7 +108,7 @@ class DashboardActivity : BaseActivity(), NavigationView.OnNavigationItemSelecte
         navController = navHostFragment.navController
 
 
-        setupActionBarWithNavController(this, navController!!, binding.drawerLayout)
+        setupActionBarWithNavController(this, navController!!, appBarConfiguration)
         setupWithNavController(binding.navigationView, navController!!)
         binding.navigationView.setNavigationItemSelectedListener(this)
     }
@@ -102,7 +118,7 @@ class DashboardActivity : BaseActivity(), NavigationView.OnNavigationItemSelecte
             Utility.hideKeyboard(this, this.currentFocus!!)
         } catch (e: Exception) {
         }
-        return navigateUp(findNavController(this, R.id.fragment), binding.drawerLayout)
+        return navigateUp(findNavController(this, R.id.fragment), appBarConfiguration)
     }
 
     override fun onBackPressed() {
@@ -138,7 +154,7 @@ class DashboardActivity : BaseActivity(), NavigationView.OnNavigationItemSelecte
                 bundle.putBoolean(Constants.IS_UN_KNOW, false)
                 bundle.putBoolean(Constants.IS_SINGLE, true)
                 bundle.putBoolean(Constants.FROM_DRAWER, true)
-                navController!!.navigate(R.id.packIDOperationFragment,bundle)
+                navController!!.navigate(R.id.packIDOperationFragment, bundle)
             }
             R.id.assignRetrievingFragment -> navController!!.navigate(R.id.retrievingFragment)
             R.id.pickingFragment -> navController!!.navigate(R.id.pickingFragment)

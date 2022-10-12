@@ -10,6 +10,7 @@
         android:name="com.commoncents.ui.dashboard.account.fragment.MyaccountFragment"
         android:label="@string/myaccount"
         tools:layout="@layout/fragment_myaccount" />
+
     <fragment
         android:id="@+id/quickscanFragment"
         android:name="com.commoncents.ui.dashboard.quickscan.fragment.QuickscanFragment"
@@ -21,35 +22,32 @@
     </fragment>
 
     <dialog
-        android:windowSoftInputMode="stateUnspecified|adjustPan"
         android:id="@+id/bottomSheetPrintPackID"
         android:name="com.commoncents.view.dialog.PrintPackIDDialogFragment"
+        android:windowSoftInputMode="stateUnspecified|adjustPan"
         tools:layout="@layout/custom_popup_printpackid_layout" />
 
     <fragment
         android:id="@+id/qrcodeScanFragment"
         android:name="com.commoncents.ui.dashboard.quickscan.fragment.QrcodeScanFragment"
-        android:label="@string/scanqrcode"></fragment>
+        android:label="@string/scanqrcode" />
 
 
     <fragment
         android:id="@+id/viewPDFFragment"
         android:name="com.commoncents.ui.dashboard.packidoperation.fragment.ViewPDFFragment"
-        android:label="@string/viewpdf"></fragment>
-
-
+        android:label="@string/viewpdf" />
 
 
     <fragment
         android:id="@+id/assignLocationFragment"
         android:name="com.commoncents.ui.dashboard.assignpackid.fragment.AssignPackFragment"
-        android:label="Assign Pack ID Location">
-    </fragment>
+        android:label="Assign Pack ID Location" />
 
     <fragment
         android:id="@+id/assignPalletFragment"
         android:name="com.commoncents.ui.dashboard.assignbrokenpallet.fragment.BrokenPalletFragment"
-        android:label="Report Damage Pallet"></fragment>
+        android:label="Report Damage Pallet" />
 
     <fragment
         android:id="@+id/retrievingFragment"
@@ -128,7 +126,6 @@
         android:id="@+id/assignPackagingFragment"
         android:name="com.commoncents.ui.dashboard.packaging.fragment.AssignPackagingFragment"
         android:label="@string/assign_packaging"
-        tools:layout="@layout/fragment_assign_packaging">
-    </fragment>
+        tools:layout="@layout/fragment_assign_packaging" />
 
 </navigation>

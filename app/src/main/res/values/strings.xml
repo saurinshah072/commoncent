@@ -211,6 +211,7 @@
     <string name="_19_a_1111">19-A-1111</string>
     <string name="too_many_items_picked">Too many items picked, please put back the extra and re pack the item</string>
     <string name="over_picked_item">Over Picked Item</string>
+    <string name="e">E -</string>
     <!--    <string-array name="unit_measure_array">-->
     <!--        <item>Select Unit of Measure</item>-->
     <!--        <item>ES</item>-->
