@@ -1,5 +1,5 @@
 package com.commoncents.ui.picking.interfaces
 
 interface PalletClicks {
-    fun getPalletPosition(position: Int)
+    fun getPalletPosition(lastClickedPosition: Int)
 }

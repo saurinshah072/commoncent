@@ -29,6 +29,13 @@
             tools:itemCount="7"
             tools:listitem="@layout/list_pallets" />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnStart"
+            style="@style/btnBigStyle"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:layout_marginVertical="@dimen/_12sdp"
+            android:background="@drawable/ic_btn_login"
+            android:text="@string/start" />
 
     </LinearLayout>
 

@@ -212,6 +212,16 @@
     <string name="too_many_items_picked">Too many items picked, please put back the extra and re pack the item</string>
     <string name="over_picked_item">Over Picked Item</string>
     <string name="e">E -</string>
+    <string name="under_picked_units">Under Picked Units</string>
+    <string name="the_item_has_been_under_picked">The item has been under picked, is there less pickable items then expected?</string>
+    <string name="_5">5</string>
+    <string name="missing">Missing</string>
+    <string name="expired">Expired</string>
+    <string name="damaged">Damaged</string>
+    <string name="_3">3</string>
+    <string name="total_missing_amount_18">Total Missing Amount: 18</string>
+    <string name="remaining_to_input_8">Remaining to Input: 8</string>
+    <string name="start">Start</string>
     <!--    <string-array name="unit_measure_array">-->
     <!--        <item>Select Unit of Measure</item>-->
     <!--        <item>ES</item>-->

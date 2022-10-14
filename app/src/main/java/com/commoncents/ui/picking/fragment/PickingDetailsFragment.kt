@@ -7,9 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
-import com.commoncents.databinding.CustomDialogOverPickedBinding
-import com.commoncents.databinding.CustomDialogPalletScanBinding
-import com.commoncents.databinding.FragmentPickingDetailsBinding
+import com.commoncents.databinding.*
 
 class PickingDetailsFragment : Fragment() {
 
@@ -40,12 +38,11 @@ class PickingDetailsFragment : Fragment() {
 
     private fun listeners() {
         binding?.btnSubmitPick?.setOnClickListener {
-            openPalletScanDialog()
+            openDialogPalletScan()
         }
     }
 
-    private fun openPalletScanDialog() {
-
+    private fun openDialogPalletScan() {
         val dialog = Dialog(requireContext())
         val cdBinding = CustomDialogPalletScanBinding.inflate(LayoutInflater.from(requireContext()))
         dialog.setContentView(cdBinding.root)
@@ -61,14 +58,13 @@ class PickingDetailsFragment : Fragment() {
 
         cdBinding.btnConfirm.setOnClickListener {
             dialog.dismiss()
-            openOverPickedDialog()
+            openDialogOverPicked()
         }
 
         dialog.show()
     }
 
-    private fun openOverPickedDialog() {
-
+    private fun openDialogOverPicked() {
         val dialog = Dialog(requireContext())
         val cdBinding = CustomDialogOverPickedBinding.inflate(LayoutInflater.from(requireContext()))
         dialog.setContentView(cdBinding.root)
@@ -79,6 +75,52 @@ class PickingDetailsFragment : Fragment() {
         )
 
         cdBinding.btnOk.setOnClickListener {
+            dialog.dismiss()
+            openDialogUnderPicked()
+        }
+
+        dialog.show()
+    }
+
+    private fun openDialogUnderPicked() {
+        val dialog = Dialog(requireContext())
+        val cdBinding =
+            CustomDialogUnderPickedBinding.inflate(LayoutInflater.from(requireContext()))
+        dialog.setContentView(cdBinding.root)
+        dialog.setCancelable(false)
+        dialog.window?.setLayout(
+            LinearLayout.LayoutParams.MATCH_PARENT,
+            LinearLayout.LayoutParams.WRAP_CONTENT
+        )
+
+        cdBinding.btnNo.setOnClickListener {
+            dialog.dismiss()
+        }
+
+        cdBinding.btnYes.setOnClickListener {
+            dialog.dismiss()
+            openDialogMissingAmount()
+        }
+
+        dialog.show()
+    }
+
+    private fun openDialogMissingAmount() {
+        val dialog = Dialog(requireContext())
+        val cdBinding =
+            CustomDialogMissingAmountBinding.inflate(LayoutInflater.from(requireContext()))
+        dialog.setContentView(cdBinding.root)
+        dialog.setCancelable(false)
+        dialog.window?.setLayout(
+            LinearLayout.LayoutParams.MATCH_PARENT,
+            LinearLayout.LayoutParams.WRAP_CONTENT
+        )
+
+        cdBinding.btnCancel.setOnClickListener {
+            dialog.dismiss()
+        }
+
+        cdBinding.btnConfirm.setOnClickListener {
             dialog.dismiss()
         }
 

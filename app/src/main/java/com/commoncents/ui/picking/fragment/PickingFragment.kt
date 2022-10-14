@@ -34,21 +34,22 @@ class PickingFragment : BaseFragment() {
     }
 
     private fun initialization() {
-
-
+        binding?.btnStart?.visibility = View.GONE
     }
 
     private fun setup() {
         binding?.rvPallets?.adapter = PalletsAdapter(context, object :
             PalletClicks {
-            override fun getPalletPosition(position: Int) {
-                navigation.navigate(R.id.pickingDetailsFragment)
+            override fun getPalletPosition(lastClickedPosition: Int) {
+                binding?.btnStart?.visibility = View.VISIBLE
             }
         })
     }
 
     private fun listeners() {
-
+        binding?.btnStart?.setOnClickListener {
+            navigation.navigate(R.id.pickingDetailsFragment)
+        }
     }
 
 }

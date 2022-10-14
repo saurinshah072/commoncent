@@ -1,5 +1,6 @@
 package com.commoncents.ui.picking.adapters
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -14,6 +15,9 @@ class PalletsAdapter(
     private val context: Context?, private val palletClicks: PalletClicks
 ) : RecyclerView.Adapter<PalletsAdapter.PalletsHolder>() {
 
+    private var clickedPosition = -1
+    private var childClickedPosition = -1
+
     class PalletsHolder(val binding: ListPalletsBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = PalletsHolder(
@@ -23,19 +27,18 @@ class PalletsAdapter(
         )
     )
 
+    @SuppressLint("NotifyDataSetChanged")
     override fun onBindViewHolder(holder: PalletsHolder, position: Int) {
         with(holder.binding) {
-
             rvPalletsItems.adapter = PalletsItemAdapter(context, object :
                 PalletItemClicks {
-                override fun getPalletItemPosition(position: Int) {
-                    palletClicks.getPalletPosition(position)
+                override fun getPalletItemPosition(lastClickedPosition: Int) {
+                    clickedPosition = holder.bindingAdapterPosition
+                    childClickedPosition = lastClickedPosition
+//                    notifyDataSetChanged()
+                    palletClicks.getPalletPosition(clickedPosition)
                 }
             })
-
-            crdPallet.setOnClickListener {
-                palletClicks.getPalletPosition(position)
-            }
         }
     }
 
